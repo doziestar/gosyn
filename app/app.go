@@ -1,7 +1,8 @@
 package app
 
 import (
-	"github.com/doziestar/gosyn/app/sever"
+	"github.com/doziestar/gosyn/app/movie"
+	// "github.com/doziestar/gosyn/app/sever"
 )
 
 func Start() {
@@ -19,5 +20,6 @@ func Start() {
 
 	// fmt.Println(name)
 	// fmt.Println(*name2)
-	sever.Serve()
+	// sever.Serve()
+	movie.Movie()
 }
