@@ -13,6 +13,6 @@ func Start() {
 	r := mux.NewRouter()
 	routes.RegisterRoutes(r)
 
-	fmt.Println(http.ListenAndServe(":8080", r))
 	fmt.Println("Serving at http://localhost:8080")
+	fmt.Println(http.ListenAndServe(":8080", r))
 }
