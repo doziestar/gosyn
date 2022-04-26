@@ -1,7 +1,8 @@
 package app
 
 import (
-	"github.com/doziestar/gosyn/app/movie"
+	"github.com/doziestar/gosyn/app/bookstore"
+	// "github.com/doziestar/gosyn/app/movie"
 	// "github.com/doziestar/gosyn/app/sever"
 )
 
@@ -21,5 +22,6 @@ func Start() {
 	// fmt.Println(name)
 	// fmt.Println(*name2)
 	// sever.Serve()
-	movie.Movie()
+	// movie.Movie()
+	bookstore.Start()
 }
