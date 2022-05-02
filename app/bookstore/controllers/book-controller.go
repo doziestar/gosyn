@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/doziestar/gosyn/app/bookstore/config"
 	"github.com/doziestar/gosyn/app/bookstore/models"
 	"github.com/gorilla/mux"
 )
@@ -68,6 +69,7 @@ func UpdateBook() func(w http.ResponseWriter, r *http.Request) {
 		book.Publication = vars["publication"]
 		fmt.Println(&book)
 		book.Update()
+		config.GetDB().Save(&book)
 		w.WriteHeader(http.StatusAccepted)
 		json.NewEncoder(w).Encode(&book)
 	}
