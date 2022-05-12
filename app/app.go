@@ -1,10 +1,11 @@
 package app
 
-import (
-	"github.com/doziestar/gosyn/app/bookstore"
-	// "github.com/doziestar/gosyn/app/movie"
-	// "github.com/doziestar/gosyn/app/sever"
-)
+import "github.com/doziestar/gosyn/app/slackbot"
+
+// "github.com/doziestar/gosyn/app/bookstore"
+
+// "github.com/doziestar/gosyn/app/movie"
+// "github.com/doziestar/gosyn/app/sever"
 
 func Start() {
 	// var name string = "gosyn"
@@ -23,5 +24,6 @@ func Start() {
 	// fmt.Println(*name2)
 	// sever.Serve()
 	// movie.Movie()
-	bookstore.Start()
+	// bookstore.Start()
+	slackbot.Init()
 }
